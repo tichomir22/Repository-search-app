@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #C4C4C4;
+}
+
+.wrapper {
+    font-family: "Roboto", sans-serif;
+    max-width: 661px;
+    min-height: 802px;
+    margin: 0 auto;
+    background-color: #c4c4c4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper-inner{
+    max-width: 500px;
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 61px;
+    padding: 0 13px;
+    background-color: #ffffff;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.repo-name {
+    width: 100%;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.list {
+    width: 500px;
+    box-sizing: border-box;
+}
+
+.repo-name {
+    font-size: 30px;
+    width: 500px;
+    height: 44px;
+    border: 1px solid black;
+    list-style: none;
+    background: #E3E3E3;
+    vertical-align: center;
+    line-height: 44px;
+    padding-left: 14px;
+    cursor: pointer;
+}
+
+.repo-name:hover {
+    background: #65CDF9;
+}
+
+.results {
+    position: absolute;
+    top:400px;
+    left:50%;
+    transform:translate(-50%, 0%);
+}
+
+.results-list {
+    list-style: none;
+}
+
+.result {
+    font-size: 24px;
+    display: flex;
+    width: 503px;
+    height: 101px;
+    background: #E27BEB;
+    border: 1px solid black;
+    padding-left: 16px;
+    overflow: hidden;
+    padding-right:30px;
+}
+
+.info {
+    min-width: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: visible;
+}
+
+.close {
+    display: block;
+    margin-top: 34px;
+    margin-left: 40px;
+    background: #FF0000;
+    border: none;
+    width: 4px;
+    height: 32px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.close::after {
+    position: absolute;
+    top: 0;
+    left:0;
+    content: '';
+    background: #FF0000;
+    width: 4px;
+    height: 32px;
+    transform: rotate(90deg);
+
+}
+
+
+
